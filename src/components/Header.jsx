@@ -1,0 +1,71 @@
+import { useEffect, useState } from "react";
+
+function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+      {/* Top Header */}
+      <div className="header-top">
+        <div className="header-top-inner">
+          <div className="brand">
+            <img
+              src="src/assets/images/logos/logo.png"
+              alt="PSG College of Technology"
+              className="brand-logo"
+            />
+            <span className="brand-text">PSG College of Technology</span>
+          </div>
+
+          <a href="#submit" className="cta-button">
+            Submit Paper
+          </a>
+        </div>
+      </div>
+
+      {/* Bottom Navigation */}
+      <div className="header-bottom">
+        <nav className="main-nav">
+          <a href="#home">Home</a>
+
+          <div className="nav-item dropdown">
+            <span className="nav-link">
+              About <span className="caret">▾</span>
+            </span>
+            <div className="dropdown-menu">
+              <a href="#about-conference">About Conference</a>
+              <a href="#about-institute">About Institute</a>
+            </div>
+          </div>
+
+          <div className="nav-item dropdown">
+            <span className="nav-link">
+              For Authors <span className="caret">▾</span>
+            </span>
+            <div className="dropdown-menu">
+              <a href="#call-for-papers">Call for Papers</a>
+              <a href="#submission-guidelines">Submission Guidelines</a>
+              <a href="#important-dates">Important Dates</a>
+            </div>
+          </div>
+
+          <a href="#speakers">Speakers</a>
+          <a href="#sponsors">Sponsors</a>
+          <a href="#brochure">Brochure</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+export default Header;
