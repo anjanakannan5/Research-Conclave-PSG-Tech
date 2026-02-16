@@ -38,3 +38,28 @@ section {
     transform: translateY(0);
   }
 }
+
+/* Example: Adjustments for screens smaller than 768px (Tablets/Phones) */
+@media (max-width: 768px) {
+  /* Prevent horizontal scrolling */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Force vertical layout for containers that might be using flex-row */
+  .container, .row, .flex-container {
+    flex-direction: column !important;
+    padding: 10px !important;
+  }
+
+  /* Ensure images don't overflow their containers */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust font sizes for better readability on small screens */
+  h1 { font-size: 1.8rem; }
+  p { font-size: 1rem; }
+}

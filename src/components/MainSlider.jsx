@@ -1,3 +1,6 @@
+import React from "react";
+import collegeImg from "../assets/images/college.jpg";
+
 function MainSlider() {
   return (
     <section className="hero">
@@ -15,7 +18,7 @@ function MainSlider() {
         <div className="hero-image-wrapper">
           <div className="hero-image-border"></div>
           <div className="hero-image">
-            <img src="src/assets/images/college.jpg" alt="PSG College of Technology" />
+            <img src={collegeImg} alt="PSG College of Technology" />
           </div>
         </div>
 

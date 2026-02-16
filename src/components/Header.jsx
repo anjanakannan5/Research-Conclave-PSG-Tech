@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoImage from "../assets/images/logos/logo.png";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,7 @@ function Header() {
         <div className="header-top-inner">
           <div className="brand">
             <img
-              src="src/assets/images/logos/logo.png"
+              src={logoImage}
               alt="PSG College of Technology"
               className="brand-logo"
             />

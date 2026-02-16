@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import aboutCollegeImg from "../assets/images/about/aboutCollege.jpg";
+import aboutConclaveImg from "../assets/images/about/aboutConclave.jpg";
 
 function Blog() {
   const headingRef = useRef(null);
@@ -36,7 +38,7 @@ function Blog() {
           <div className="blog-item">
             <h3>About the College</h3>
             <img
-              src="src/assets/images/about/aboutCollege.jpg"
+              src={aboutCollegeImg}
               alt="PSG College of Technology"
               className="blog-image"
             />
@@ -48,7 +50,7 @@ function Blog() {
           <div className="blog-item">
             <h3>About the Conclave</h3>
             <img
-              src="src/assets/images/about/aboutConclave.jpg"
+              src={aboutConclaveImg}
               alt="Research Conclave"
               className="blog-image"
             />

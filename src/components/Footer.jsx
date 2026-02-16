@@ -1,4 +1,5 @@
 import React from "react";
+import logoImage from "../assets/images/logos/logo.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         {/* Left: Logo */}
         <div className="footer-logo">
           <img
-            src="src/assets/images/logos/logo.png"
+            src={logoImage}
             alt="PSG Tech Logo"
           />
         </div>

@@ -385,6 +385,7 @@
   padding: 20px 30px 60px 30px; /* FIX: Reduced top padding from 30px to 20px, more bottom */
   overflow: visible !important;
   margin-top: -60px; /* FIX: Negative margin pulls it up under navbar */
+  flex-direction: column;
 }
 
 /* BACKGROUND SHAPES */
@@ -525,7 +526,7 @@
   line-height: 1.1;
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -671,6 +672,8 @@
   border-radius: 20px;
   overflow: hidden;
   z-index: 2;
+  max-width: 500px; 
+  margin-top: 30px;
 }
 .hero-image img {
   width: 100%;
@@ -697,6 +700,7 @@
   filter: blur(12px);
   z-index: 1;
   animation: borderGlow 3s ease-in-out infinite alternate;
+  max-width: 550px;
 }
 @keyframes textGlow {
   0% {
@@ -714,8 +718,9 @@
 } /* HERO TEXT */
 .hero-content {
   color: #ecfeff;
-  max-width: 500px;
+  max-width: 100%;
   margin-left: 30px;
+  padding: 0 15px;
 }
 .hero-year {
   font-size: 1.1rem;
@@ -1770,4 +1775,141 @@
   padding: 18px 10px;
   font-size: 18px;
   font-weight: bold;
+}
+
+/* @media (max-width: 992px) {
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container, .row, .flex-container {
+    flex-direction: column !important;
+    padding: 10px !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  h1 { font-size: 1.8rem; }
+  p { font-size: 1rem; }
+
+  .hero-section {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+    .hero-title {
+        font-size: 4rem;
+    }
+    .hero-image {
+        margin-top: 0;
+    }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}  */
+
+/* ==========================================
+   MOBILE RESPONSIVE OVERRIDES (Add to bottom)
+   ========================================== */
+
+@media (max-width: 992px) {
+    /* --- GLOBAL FIXES --- */
+    .container, .header-top-inner, .main-nav, .hero-inner, .dates-container, .cfp-container, .reg-container, .paper-container, .gallery-container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        box-sizing: border-box;
+    }
+
+    /* --- NAVBAR --- */
+    .header-top-inner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .main-nav {
+        flex-wrap: wrap; /* Fixes navigation breaking off screen */
+        gap: 15px;
+        justify-content: center;
+    }
+    .brand-text { font-size: 1.1rem; }
+
+    /* --- HERO SECTION --- */
+    .hero {
+        padding: 80px 15px 40px 15px !important;
+        margin-top: 0;
+        height: auto !important;
+        min-height: 100vh;
+    }
+    .hero-inner {
+        flex-direction: column !important; /* Stacks image and text */
+        gap: 40px;
+    }
+    .hero-content {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 2.2rem !important;
+        justify-content: center;
+    }
+    .hero-image-wrapper {
+        max-width: 100% !important;
+    }
+    .hero-image img {
+        height: 300px !important; /* Smaller image for mobile */
+    }
+
+    /* --- IMPORTANT DATES (Timeline Fix) --- */
+    .timeline::before {
+        left: 20px !important; /* Moves the line to the left side */
+    }
+    .timeline-item {
+        width: 100% !important;
+        left: 0 !important;
+        padding-left: 50px !important; /* Space for the line */
+        padding-right: 0 !important;
+        text-align: left !important;
+        margin-bottom: 30px;
+    }
+    .timeline-item.right {
+        left: 0 !important;
+    }
+    .timeline-item.left .circle, .timeline-item.right .circle {
+        left: 10px !important; /* Aligns dots with the new line position */
+    }
+    .date-card {
+        width: 100%;
+    }
+
+    /* --- REGISTRATION & PAPER SUBMISSION --- */
+    .reg-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .reg-amount {
+        align-self: flex-start;
+    }
+    .paper-grid {
+        grid-template-columns: 1fr !important; /* Stacks the two-column layout */
+    }
+}
+
+@media (max-width: 600px) {
+    .brand-logo { height: 40px; }
+    .hero-title { font-size: 1.8rem !important; }
+    .text-loading { font-size: 30px; } /* Preloader text */
+    .org-cards-wrapper {
+        grid-template-columns: 1fr !important;
+    }
 }

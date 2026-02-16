@@ -1,4 +1,4 @@
-import Preloader from "./components/preloader";
+import Preloader from "./components/Preloader";
 import Header from "./components/Header";
 import MainSlider from "./components/MainSlider";
 import Blog from "./components/Blog";
