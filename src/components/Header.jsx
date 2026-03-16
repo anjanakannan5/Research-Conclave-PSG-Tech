@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logoImage from "../assets/images/logos/logo.png";
+
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -49,9 +50,7 @@ function Header() {
               <a href="#important-dates">Important Dates</a>
             </div>
           </div>
-          <a href="#speakers">Speakers</a>
-          <a href="#sponsors">Sponsors</a>
-          <a href="#brochure">Brochure</a>
+          <a href="src/assets/Brochure.pdf" download="Brochure.pdf" type="application/pdf">Download Brochure</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>

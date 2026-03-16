@@ -46,7 +46,7 @@ function MainSlider() {
             <span>Coimbatore, India</span>
           </p>
 
-          <a href="#submit" className="hero-btn">
+          <a href="https://manuscript.psgtech.ac.in/login" className="hero-btn">
             Submit Paper
           </a>
 

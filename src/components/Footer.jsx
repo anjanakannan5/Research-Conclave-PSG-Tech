@@ -3,7 +3,7 @@ import logoImage from "../assets/images/logos/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       {/* Top footer content */}
       <div className="footer-top">
         {/* Left: Logo */}
@@ -43,7 +43,7 @@ const Footer = () => {
 
       {/* Bottom copyright bar */}
       <div className="footer-bottom">
-        <p>Copyright 2025 e-Campus Coordinator, PSG Tech</p>
+        <p>Copyright 2026 e-Campus Coordinator, PSG Tech</p>
       </div>
     </footer>
   );
