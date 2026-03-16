@@ -3,8 +3,7 @@ import collegeImg from "../assets/images/college.jpg";
 
 function MainSlider() {
   return (
-    <section className="hero">
-
+    <section className="hero" id="home">
       {/* Animated Background Shapes */}
       <div className="hero-bg">
         <span className="shape shape1"></span>
@@ -14,7 +13,7 @@ function MainSlider() {
 
       <div className="hero-inner">
 
-        {/* Hero Image with Gradient Border */}
+        {/* Hero Image */}
         <div className="hero-image-wrapper">
           <div className="hero-image-border"></div>
           <div className="hero-image">
@@ -24,23 +23,34 @@ function MainSlider() {
 
         {/* Hero Text */}
         <div className="hero-content">
-          <div className="hero-year">2026</div>
 
-          <h1 className="hero-title">
-            <span className="research">Research</span>{" "}
-            <span className="conclave">Conclave</span>
-          </h1>
+          {/* Year + Title wrapper */}
+          <div className="hero-title-wrapper">
+
+            <div className="hero-year-vertical">
+              <span>2</span>
+              <span>0</span>
+              <span>2</span>
+              <span>6</span>
+            </div>
+
+            <h1 className="hero-title">
+              <span className="research">Research</span>
+              <span className="conclave">Conclave</span>
+            </h1>
+
+          </div>
 
           <p className="hero-meta">
-            May 15–16, 2026 <br />
+            May 14–15, 2026 <br />
             <span>Coimbatore, India</span>
           </p>
 
           <a href="#submit" className="hero-btn">
             Submit Paper
           </a>
-        </div>
 
+        </div>
       </div>
     </section>
   );

@@ -1,21 +1,16 @@
 import { useEffect, useState } from "react";
 import logoImage from "../assets/images/logos/logo.png";
-
 function Header() {
   const [scrolled, setScrolled] = useState(false);
-
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
   return (
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
-      {/* Top Header */}
       <div className="header-top">
         <div className="header-top-inner">
           <div className="brand">
@@ -26,18 +21,15 @@ function Header() {
             />
             <span className="brand-text">PSG College of Technology</span>
           </div>
-
-          <a href="#submit" className="cta-button">
+          <a href="https://manuscript.psgtech.ac.in/login" className="cta-button">
             Submit Paper
           </a>
         </div>
       </div>
-
       {/* Bottom Navigation */}
       <div className="header-bottom">
         <nav className="main-nav">
           <a href="#home">Home</a>
-
           <div className="nav-item dropdown">
             <span className="nav-link">
               About <span className="caret">▾</span>
@@ -47,7 +39,6 @@ function Header() {
               <a href="#about-institute">About Institute</a>
             </div>
           </div>
-
           <div className="nav-item dropdown">
             <span className="nav-link">
               For Authors <span className="caret">▾</span>
@@ -58,7 +49,6 @@ function Header() {
               <a href="#important-dates">Important Dates</a>
             </div>
           </div>
-
           <a href="#speakers">Speakers</a>
           <a href="#sponsors">Sponsors</a>
           <a href="#brochure">Brochure</a>
@@ -68,5 +58,4 @@ function Header() {
     </header>
   );
 }
-
 export default Header;

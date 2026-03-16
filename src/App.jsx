@@ -23,7 +23,6 @@ function App() {
         <CallForPapers />
         <Registration />
         <PaperSubmission />
-        {/* <Speakers /> */}
         <Gallery />
         <Footer />
       </div>

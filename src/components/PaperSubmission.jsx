@@ -3,7 +3,7 @@ import React from "react";
 const PaperSubmission = () => {
   return (
     <section className="org-section" id="paper-submission">
-      <div className="paper-container">
+      <div className="paper-container" id="submission-guidelines">
 
         <h2 className="paper-title">Paper Submission</h2>
 
@@ -17,7 +17,7 @@ const PaperSubmission = () => {
           <div className="paper-card paper-card-primary">
             <h3>Manuscript Submission Guidelines</h3>
             <ul>
-              <li>RC 2025 invites full length original research contributions from professionals from industries, R&amp;D organizations, academic institutions, government departments and research scholars from across the country.</li>
+              <li>RC 2026 invites full length original research contributions from professionals from industries, R&amp;D organizations, academic institutions, government departments and research scholars from across the country.</li>
               <li>Full length original research contributions and review articles not exceeding six pages as per the IEEE double column format shall be submitted.</li>
               <li>The manuscript should contribute original research ideas, developmental ideas, analysis, findings, results, etc.</li>
               <li>The manuscript should not have been published in any journals/magazines or conference proceedings and not under review in any of them.</li>
