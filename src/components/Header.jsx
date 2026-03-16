@@ -50,7 +50,7 @@ function Header() {
               <a href="#important-dates">Important Dates</a>
             </div>
           </div>
-          <a href="src/assets/Brochure.pdf" download="Brochure.pdf" type="application/pdf">Download Brochure</a>
+          <a href="Brochure.pdf" download="Brochure.pdf" type="application/pdf">Download Brochure</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
