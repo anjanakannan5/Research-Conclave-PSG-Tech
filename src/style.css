@@ -599,6 +599,59 @@ body{
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 30px 65px rgba(0,0,0,0.45);
 }
+@media (max-width: 768px){
+
+  .hero-inner{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-content{
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-title-wrapper{
+    flex-direction: row; /* still side-by-side */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-year-vertical{
+    font-size: 22px; /* smaller */
+  }
+
+  .hero-title{
+    font-size: 36px; /* reduce size */
+  }
+
+}
+
+@media (max-width: 768px){
+  .hero-title .research,
+  .hero-title .conclave{
+    -webkit-text-stroke: 0px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  }
+
+  .hero-title-wrapper{
+    flex-direction: column;  /* stack */
+    align-items: center;
+  }
+
+  .hero-year-vertical{
+    flex-direction: row; /* make 2026 horizontal */
+    gap: 6px;
+    font-size: 22px;
+  }
+
+  .hero-title{
+    font-size: 34px;
+    text-align: center;
+  }
+
+}
 
 /* ==============================
    BLOG SECTION
