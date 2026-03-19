@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-address">
           <h3>Address</h3>
           <p>
-            The Organizing Secretary, Research Conclave 2025, PSG College of
+            The Organizing Secretary, Research Conclave 2026, PSG College of
             Technology, Peelamedu, Coimbatore - 641004 Tamilnadu, India
           </p>
 

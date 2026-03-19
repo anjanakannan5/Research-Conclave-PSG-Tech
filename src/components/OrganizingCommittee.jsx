@@ -66,7 +66,7 @@ function OrganizingCommittee() {
           {/* Advisory Committee */}
           <div className="org-card">
             <h4 className="org-role">Advisory Committee</h4>
-            <p><span>Dr V Ramasamy</span><br />Dean - Academic</p><hr />
+            <p><span>Dr V J Ramasamy</span><br />Dean - Academic</p><hr />
             <p><span>Dr R Nadarajan</span><br />Dean - Placement & Training</p><hr />
             <p><span>Dr V Srividya</span><br />Director - PSG Institute of Management</p><hr />
             <p><span>Dr A Chitra</span><br />Director - Internal Quality Assurance Cell</p><hr />
@@ -86,7 +86,7 @@ function OrganizingCommittee() {
           <div className="org-card">
             <h4 className="org-role">Industry Collaboration</h4>
             <p><span>Dr B Vinod</span><br />HoD (i/c), Dept. of Robotics & Automation Engg.</p><hr />
-            <p><span>Dr S Praveen Kumar</span><br />Executive Director, PSG-STEP</p><hr />
+            <p><span>Dr K Suresh Kumar</span><br />Executive Director, PSG-STEP</p><hr />
           </div>
 
           {/* Finance Committee */}

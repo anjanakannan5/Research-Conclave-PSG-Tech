@@ -93,7 +93,19 @@ const CallForPapers = () => {
               <li>Modern Construction and Building Materials</li>
               <li>Sustainable Fashion</li>
             </ul>
-          </div>          
+          </div>   
+          
+          <div className="cfp-card">
+            <h3>Advancements in Electronics and Intelligent Systems</h3>
+            <ul>
+              <li>Intelligent Electronic Systems and Cyber-Physical Architectures</li>
+              <li>Embedded Systems, IoT and Automotive Electronics</li>
+              <li>Power Electronics, Drives, Smart Grid and Energy-Efficient Systems</li>
+              <li>Communication Systems, Signal & Image Processing and Intelligent Networks</li>
+              <li>VLSI Systems, Sensors and Nano-electronics</li>
+              <li>Instrumentation & Control Systems, Automation and Intelligent Grid Technologies</li>
+            </ul>
+          </div>                 
         </div>
 
 {/*         <div className="cfp-notes">

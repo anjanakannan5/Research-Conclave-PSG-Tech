@@ -30,7 +30,7 @@ function Blog() {
       <div className="container">
 
         <h2 ref={headingRef} className="blog-theme">
-          Advancing Scientific Knowledge for Sustainable Societal Transformation through Interdisciplinary Research
+          THEME<br />Advancing Scientific Knowledge for Sustainable Societal Transformation through Interdisciplinary Research
         </h2>
 
         <div className="blog-content">

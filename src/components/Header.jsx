@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logoImage from "../assets/images/logos/logo.png";
+import logo75 from "../assets/images/logos/logo75.png";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,6 +22,11 @@ function Header() {
               className="brand-logo"
             />
             <span className="brand-text">PSG College of Technology</span>
+            <img
+              src={logo75}
+              alt="PSG College of Technology"
+              className="brand-logo"
+            />            
           </div>
           <a href="https://manuscript.psgtech.ac.in/login" className="cta-button">
             Submit Paper
