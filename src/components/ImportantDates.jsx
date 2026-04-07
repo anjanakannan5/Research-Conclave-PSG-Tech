@@ -9,7 +9,7 @@ function ImportantDates() {
           <div className="timeline-item left">
             <span className="circle navy"></span>
             <div className="date-card navy-glow">
-              <span className="date-badge navy">April 11, 2026</span>
+              <span className="date-badge navy">April 20, 2026</span>
               <h4>Full Paper Submission Deadline</h4>
               <p>Last date to submit your research paper</p>
             </div>
@@ -18,7 +18,7 @@ function ImportantDates() {
           <div className="timeline-item right">
             <span className="circle yellow"></span>
             <div className="date-card yellow-glow">
-              <span className="date-badge yellow">April 23, 2026</span>
+              <span className="date-badge yellow">April 28, 2026</span>
               <h4>Acceptance Notification</h4>
               <p>Authors will be notified of acceptance</p>
             </div>
@@ -27,7 +27,7 @@ function ImportantDates() {
           <div className="timeline-item left">
             <span className="circle pink"></span>
             <div className="date-card pink-glow">
-              <span className="date-badge pink">May 2, 2026</span>
+              <span className="date-badge pink">May 8, 2026</span>
               <h4>Final Submission</h4>
               <p>Camera-ready paper submission deadline</p>
             </div>
@@ -36,7 +36,7 @@ function ImportantDates() {
           <div className="timeline-item right">
             <span className="circle teal"></span>
             <div className="date-card teal-glow">
-              <span className="date-badge teal">May 5, 2026</span>
+              <span className="date-badge teal">May 11, 2026</span>
               <h4>Last Date for Registration Fee Payment</h4>
               <p>Last date to complete registration</p>
             </div>

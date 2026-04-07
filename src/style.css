@@ -1665,6 +1665,43 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }  */
+/* Add this to your CSS file (e.g., Footer.css) */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #004d26;
+  color: #fff;
+}
+
+/* This creates the "centering" effect on desktop */
+.footer-copyright {
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 50px; /* Offsets the counter width to keep text centered */
+}
+
+/* THE MOBILE FIX */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column; /* Stacks items vertically */
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-copyright {
+    padding-left: 0; /* Remove offset on mobile */
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /* ==========================================
    MOBILE RESPONSIVE OVERRIDES (Add to bottom)
