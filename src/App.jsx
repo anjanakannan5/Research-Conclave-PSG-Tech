@@ -7,6 +7,7 @@ import OrganizingCommittee from "./components/OrganizingCommittee";
 import CallForPapers from "./components/CallForPapers";
 import Registration from "./components/Registration";
 import PaperSubmission from "./components/PaperSubmission";
+import RC2025Tabs from "./components/RC2025Tabs";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 
@@ -23,6 +24,7 @@ function App() {
         <CallForPapers />
         <Registration />
         <PaperSubmission />
+        <RC2025Tabs />
         <Gallery />
         <Footer />
       </div>

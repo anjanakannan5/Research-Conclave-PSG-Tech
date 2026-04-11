@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import logoImage from "../assets/images/logos/logo.png";
 import logo75 from "../assets/images/logos/logo75.png";
-
+import brochure from "../assets/Brochure.pdf"
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -56,7 +56,9 @@ function Header() {
               <a href="#important-dates">Important Dates</a>
             </div>
           </div>
-          <a href="/Brochure.pdf" download="Brochure.pdf" type="application/pdf">Download Brochure</a>
+          {/* <a href="/Brochure.pdf" download="Brochure.pdf" type="application/pdf">Download Brochure</a> */}
+          <a href={brochure} download="RC2025_Brochure.pdf">Download Brochure</a>
+          <a href="#rc2025">RC2025</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>

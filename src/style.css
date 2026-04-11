@@ -1703,6 +1703,90 @@ body{
   }
 }
 
+/* =========================================
+============RC2025 Tabs=====================
+============================================ */
+.rc-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #24805b;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.rc-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* List */
+.rc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Each Row */
+.rc-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 18px;
+  background: #f5f7ff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.rc-item:hover {
+  background: #56e6b6;
+}
+
+/* Text */
+.rc-item span {
+  flex: 1;       
+  max-width: 70%;
+  font-size: 17px;
+  color: #333;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+
+/* Button/Link */
+.rc-item a {
+  width: 140px;
+  text-align: center;
+  text-decoration: none;
+  background: #036e34;
+  color: white;
+  padding: 8px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.rc-item a:hover {
+  background: #0da987;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .rc-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .rc-item a {
+    align-self: flex-end;
+  }
+}
+
 /* ==========================================
    MOBILE RESPONSIVE OVERRIDES (Add to bottom)
    ========================================== */

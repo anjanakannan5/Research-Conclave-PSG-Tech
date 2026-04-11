@@ -8,7 +8,9 @@ const PaperSubmission = () => {
         <h2 className="paper-title">Paper Submission</h2>
 
         <div className="paper-btn-wrapper">
-          <button className="paper-submit-btn">Submit Paper</button>
+          <a href="https://manuscript.psgtech.ac.in/login">
+            <button className="paper-submit-btn">Submit Paper</button>
+          </a>
         </div>
 
         <div className="paper-grid">
