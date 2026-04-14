@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import logoImage from "../assets/images/logos/logo.png";
 import logo75 from "../assets/images/logos/logo75.png";
-import brochure from "../assets/Brochure.pdf"
+import brochure from "../assets/Brochure.pdf";
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -26,9 +26,12 @@ function Header() {
               src={logo75}
               alt="PSG College of Technology"
               className="brand-logo"
-            />            
+            />
           </div>
-          <a href="https://manuscript.psgtech.ac.in/login" className="cta-button">
+          <a
+            href="https://manuscript.psgtech.ac.in/login"
+            className="cta-button"
+          >
             Submit Paper
           </a>
         </div>
@@ -57,10 +60,25 @@ function Header() {
             </div>
           </div>
           {/* <a href="/Brochure.pdf" download="Brochure.pdf" type="application/pdf">Download Brochure</a> */}
-          <a href={brochure} download="RC2025_Brochure.pdf">Download Brochure</a>
+          <a href={brochure} download="RC2025_Brochure.pdf">
+            Download Brochure
+          </a>
           <a href="#rc2025">RC2025</a>
           <a href="#contact">Contact</a>
         </nav>
+      </div>
+      {/* Scrolling Announcement */}
+      <div className="scopus-banner">
+        <div className="scrolling-text">
+          <a
+            href="https://www.scopus.com/pages/publications/105033838834?origin=resultslist"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Proceedings of RC2025 are now indexed in Scopus! Click here to view
+            publication details.
+          </a>
+        </div>
       </div>
     </header>
   );

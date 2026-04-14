@@ -3,19 +3,6 @@ import collegeImg from "../assets/images/college.jpg";
 
 function MainSlider() {
   return (
-    <>
-      {/* Scrolling Announcement */}
-      <div className="scopus-banner">
-        <div className="scrolling-text">
-          <a 
-            href="https://www.scopus.com/pages/publications/105033838834?origin=resultslist" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            Proceedings of RC2025 are now indexed in Scopus! Click here to view publication details.
-          </a>
-        </div>
-      </div>
     <section className="hero" id="home">
       {/* Animated Background Shapes */}
       <div className="hero-bg">
@@ -66,7 +53,6 @@ function MainSlider() {
         </div>
       </div>
     </section>
-  </>
   );
 }
 
