@@ -2,6 +2,7 @@ import React from "react";
 import brochure from "../assets/Brochure2025.pdf";
 import proceedings from "../assets/Proceedings-book1.pdf";
 import chapterDetails from "../assets/Proceedings-book2.pdf";
+import report from "../assets/RC2025_report.pdf"
 
 const RC2025 = () => {
   return (
@@ -36,10 +37,10 @@ const RC2025 = () => {
         </div>
 
         {/* Report */}
-{/*         <div className="rc-item">
+         <div className="rc-item">
           <span>RC2025 Report</span>
-          <a href={proceedings} target="_blank" rel="noreferrer">Download</a>
-        </div> */}
+          <a href={report} target="_blank" rel="noreferrer">Download</a>
+        </div>
 
         {/* Brochure */}
         <div className="rc-item">
