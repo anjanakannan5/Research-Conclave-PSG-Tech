@@ -9,7 +9,7 @@ function ImportantDates() {
           <div className="timeline-item left">
             <span className="circle navy"></span>
             <div className="date-card navy-glow">
-              <span className="date-badge navy">April 27, 2026</span>
+              <span className="date-badge navy">May 1, 2026</span>
               <h4>Full Paper Submission Deadline</h4>
               <p>Last date to submit your research paper</p>
             </div>
@@ -27,7 +27,7 @@ function ImportantDates() {
           <div className="timeline-item left">
             <span className="circle pink"></span>
             <div className="date-card pink-glow">
-              <span className="date-badge pink">May 9, 2026</span>
+              <span className="date-badge pink">May 10, 2026</span>
               <h4>Final Submission</h4>
               <p>Camera-ready paper submission deadline</p>
             </div>
@@ -47,5 +47,4 @@ function ImportantDates() {
     </section>
   );
 }
-
 export default ImportantDates;
