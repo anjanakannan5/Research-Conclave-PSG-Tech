@@ -36,7 +36,7 @@ function ImportantDates() {
           <div className="timeline-item right">
             <span className="circle teal"></span>
             <div className="date-card teal-glow">
-              <span className="date-badge teal">May 11, 2026</span>
+              <span className="date-badge teal">May 13, 2026</span>
               <h4>Last Date for Registration Fee Payment</h4>
               <p>Last date to complete registration</p>
             </div>
