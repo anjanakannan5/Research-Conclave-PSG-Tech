@@ -7,13 +7,124 @@ const PaperSubmission = () => {
     <section className="org-section" id="paper-submission">
       <div className="paper-container" id="submission-guidelines">
         <h2 className="paper-title">Paper Submission</h2>
+        
+        {/* Publication Ethics */}
+        <div className="ethics-card">
+          <h3>Publication Ethics and Malpractice Statement</h3>
 
+          <p className="ethics-intro">
+            Research Conclave committee is committed to upholding the highest
+            standards of publication ethics and takes all possible measures to
+            prevent any publication malpractice. The editorial board, authors,
+            reviewers, and publishers are expected to adhere to the following
+            principles:
+          </p>
+
+          <div className="ethics-grid">
+            <div className="ethics-item">
+              <h4>1. Responsibilities of the Editorial Board</h4>
+              <ul>
+                <li>
+                  <strong>Fair Evaluation:</strong> Manuscripts will be
+                  evaluated solely on their intellectual content without regard
+                  to race, gender, sexual orientation, religious belief, ethnic
+                  origin, citizenship, or political philosophy of the authors.
+                </li>
+                <li>
+                  <strong>Confidentiality:</strong> Editors and staff must not
+                  disclose information about a submitted manuscript except to
+                  authorized parties.
+                </li>
+                <li>
+                  <strong>Conflict of Interest:</strong> Editors must not use
+                  unpublished information in their own research without the
+                  author's express written consent.
+                </li>
+                <li>
+                  <strong>Handling Unethical Behavior:</strong> The editorial
+                  team shall take reasonable responsive measures when ethical
+                  complaints concern a submitted manuscript or published paper.
+                </li>
+              </ul>
+            </div>
+
+            <div className="ethics-item">
+              <h4>2. Responsibilities of Authors</h4>
+              <ul>
+                <li>
+                  <strong>Originality and Plagiarism:</strong> Authors must
+                  submit original work and appropriately cite the work and words
+                  of others.
+                </li>
+                <li>
+                  <strong>Data Access and Retention:</strong> Authors may be
+                  asked to provide raw data for editorial review and should
+                  retain it for a reasonable time after publication.
+                </li>
+                <li>
+                  <strong>
+                    Multiple, Redundant, or Concurrent Publication:
+                  </strong>{" "}
+                  Authors should not submit the same manuscript to more than one
+                  journal simultaneously.
+                </li>
+                <li>
+                  <strong>Acknowledgment of Sources:</strong> Proper
+                  acknowledgment of the work of others must always be given.
+                </li>
+                <li>
+                  <strong>Authorship:</strong> Authorship should be limited to
+                  those who significantly contributed to the study's conception,
+                  design, execution, or interpretation.
+                </li>
+              </ul>
+            </div>
+
+            <div className="ethics-item">
+              <h4>3. Responsibilities of Reviewers</h4>
+              <ul>
+                <li>
+                  <strong>Editorial Decisions:</strong> Peer review assists
+                  editors in making decisions and authors in improving their
+                  papers.
+                </li>
+                <li>
+                  <strong>Confidentiality:</strong> Manuscripts received for
+                  review must be treated as confidential documents.
+                </li>
+                <li>
+                  <strong>Objectivity:</strong> Reviews should be conducted
+                  objectively, with clear observations and supporting arguments.
+                </li>
+                <li>
+                  <strong>Acknowledgment of Sources:</strong> Reviewers should
+                  identify relevant published work that has not been cited by
+                  the authors.
+                </li>
+                <li>
+                  <strong>Conflict of Interest:</strong> Reviewers should not
+                  review manuscripts in which they have conflicts of interest.
+                </li>
+              </ul>
+            </div>
+
+            <div className="ethics-item">
+              <h4>4. Publication Malpractice</h4>
+              <p>
+                Research Conclave committee does not tolerate plagiarism, data
+                fabrication, or falsification. Any instance of misconduct will
+                result in the rejection of the manuscript or retraction of a
+                published article, and appropriate sanctions will be applied.
+              </p>
+            </div>
+          </div>
+        </div>
+        
         <div className="paper-btn-wrapper">
           <a href="https://manuscript.psgtech.ac.in/login">
             <button className="paper-submit-btn">Submit Paper</button>
           </a>
         </div>
-
         <div className="paper-grid">
           {/* Left Main Card */}
           <div className="paper-card paper-card-primary">

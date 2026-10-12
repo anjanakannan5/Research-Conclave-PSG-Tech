@@ -1541,6 +1541,116 @@ body{
   color: black;
 }
 
+/* Publication Ethics - Single Card */
+.ethics-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 0 auto 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),
+              0 0 16px rgba(18, 164, 125, 0.18);
+  transition: box-shadow 0.3s ease;
+}
+
+.ethics-card > h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #3b1d4a;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+.ethics-intro {
+  color: #053d31;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* Two columns, two rows */
+.ethics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ethics-item {
+  padding: 22px;
+  border-radius: 12px;
+  background: #f4faf7;
+  border: 1px solid #e0eee7;
+  transition: background 0.3s ease, color 0.3s ease,
+              transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ethics-item:hover {
+  background: linear-gradient(135deg, #08694f, #328b72);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(18, 164, 125, 0.25);
+}
+
+.ethics-item h4 {
+  color: #0b5b49;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 14px;
+  transition: color 0.3s ease;
+}
+
+.ethics-item ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.ethics-item li,
+.ethics-item p {
+  color: #053d31;
+  font-size: 14px;
+  line-height: 1.75;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.ethics-item li:last-child {
+  margin-bottom: 0;
+}
+
+/* Text changes to white on hover */
+.ethics-item:hover h4,
+.ethics-item:hover li,
+.ethics-item:hover p {
+  color: #ffffff;
+}
+
+.ethics-item:hover strong {
+  color: #fff5b5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ethics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ethics-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ethics-card {
+    padding: 18px;
+  }
+
+  .ethics-card > h3 {
+    font-size: 22px;
+  }
+
+  .ethics-item {
+    padding: 18px;
+  }
+}
+
 /* ============================
    ========= Gallery ==========
    ============================ */
