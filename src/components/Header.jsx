@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import logoImage from "../assets/images/logos/logo.png";
 import logo75 from "../assets/images/logos/logo75.png";
 import brochure from "../assets/Brochure.pdf";
+import schedule from "../assets/Schedule.docx";
+import manuscriptReview from "../assets/ManuscriptReviewProcess.docx";
+
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -57,6 +60,12 @@ function Header() {
               <a href="#call-for-papers">Call for Papers</a>
               <a href="#submission-guidelines">Submission Guidelines</a>
               <a href="#important-dates">Important Dates</a>
+              <a href={schedule} download="Schedule.docx">
+                Download Schedule
+              </a>
+              <a href={manuscriptReview} download="Manuscript_Review.docx">
+                Download Manuscript Review
+              </a>
             </div>
           </div>
           {/* <a href="/Brochure.pdf" download="Brochure.pdf" type="application/pdf">Download Brochure</a> */}
